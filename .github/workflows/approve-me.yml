@@ -10,7 +10,7 @@ jobs:
     if: github.event.issue.pull_request != null && contains(github.event.comment.body, '@github-actions approve me')
     runs-on: ubuntu-latest
     permissions:
-      issues: write
+      pull-requests: write
 
     steps:
       - name: Approve pull request
